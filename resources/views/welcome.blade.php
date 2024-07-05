@@ -1,28 +1,34 @@
 <x-layout>
-    <section>
-        <h3 class="mb-6">top jobs</h3>
-    </section>
-
-    <div class="p-4 bg-white/5 rounded-xl flex flex-col text-center">
-        <div class="self-start text-sm">Epiq Dev</div>
-
-        <div class="py-8 font-bold">
-            <h3>Editor</h3>
-            <p>Full Time - From $50,000</p>
-        </div>
-
-        <div class="flex justify-between items-center mt-auto">
-            <div>
-                <a href="#"
-                   class="bg-white/10 hover:bg-white/25 px-2 py-1 rounded-xl text-x transition-colors duration-300">Tag</a>
-                <a href="#"
-                   class="bg-white/10 hover:bg-white/25 px-2 py-1 rounded-xl text-x transition-colors duration-300">Tag</a>
-                <a href="#"
-                   class="bg-white/10 hover:bg-white/25 px-2 py-1 rounded-xl text-x transition-colors duration-300">Tag</a>
+    <div class="space-y-10">
+        <section>
+            <x-section-heading>Featured Jobs</x-section-heading>
+            <div class="grid lg:grid-cols-3 gap-8 my-6">
+                <x-job-card/>
+                <x-job-card/>
+                <x-job-card/>
             </div>
-            <img src="https://placehold.it/42/42" class="rounded" alt="">
+        </section>
 
-        </div>
+
+        <section>
+            <x-section-heading>Tags</x-section-heading>
+            <div class="mt-6 space-x-1">
+                <x-tag>Tag</x-tag>
+                <x-tag>Tag</x-tag>
+                <x-tag>Tag</x-tag>
+                <x-tag>Tag</x-tag>
+                <x-tag>Tag</x-tag>
+                <x-tag>Tag</x-tag>
+                <x-tag>Tag</x-tag>
+                <x-tag>Tag</x-tag>
+                <x-tag>Tag</x-tag>
+            </div>
+        </section>
+
+        <section>
+            <x-section-heading>Recent Jobs</x-section-heading>
+
+        </section>
 
     </div>
 </x-layout>
